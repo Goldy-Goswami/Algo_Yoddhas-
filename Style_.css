@@ -1,0 +1,141 @@
+:root{
+  --primary-color: #31ffa2;    
+  --secondary-color: #040a2daa;
+  --font-size: 1.2rem;
+  --main-color: #5486d7;
+  --font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.container {
+    position: absolute;
+    inset: 0;
+    background: #000000;
+  }
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMTkuNSIgbnVtT2N0YXZlcz0iMTAiIHJlc3VsdD0idHVyYnVsZW5jZSIvPjxmZUNvbXBvc2l0ZSBvcGVyYXRvcj0iaW4iIGluPSJ0dXJidWxlbmNlIiBpbjI9IlNvdXJjZUFscGhhIiByZXN1bHQ9ImNvbXBvc2l0ZSIvPjxmZUNvbG9yTWF0cml4IGluPSJjb21wb3NpdGUiIHR5cGU9Imx1bWluYW5jZVRvQWxwaGEiLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJjb21wb3NpdGUiIG1vZGU9ImNvbG9yLWJ1cm4iLz48L2ZpbHRlcj48L2RlZnM+PGcgZmlsdGVyPSJ1cmwoJyNhJykiPjxwYXRoIGZpbGw9IiMyNmIiIGQ9Ik0wIDBoMTAwdjEwMEgweiIvPjxwYXRoIGQ9Ik0wIDB2MTAwaDEwMFYwWiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiM0OGYiIGZpbGw9IiMwMDAwIi8+PHBhdGggZmlsbD0iIzQ4ZjUiIGQ9Ik01MCAwaDF2MTAwaC0xeiIvPjxwYXRoIGZpbGw9IiM0OGY1IiBkPSJNMCA1MGgxMDB2MUgweiIvPjwvZz48L3N2Zz4=");
+    mask: linear-gradient(rgba(0, 0, 0, 0.348), #00000039);
+  }
+body{
+    background-color:#000;
+}  
+
+#logo{
+    width: 420px;
+    height: 150px;
+    margin:0px 350px;
+    object-fit: cover;
+    z-index: 1;
+ }
+ h1{
+    z-index: 1;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 5rem;
+    animation: H1-Animation 2s  0.3s infinite  alternate;
+ }
+ 
+ #button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    margin: auto 150px; 
+  }
+
+.button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    left:250px;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+  }
+ 
+  button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 250%;
+  }
+
+#M-Main-Box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#Main-Box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+ }  
+.card {
+    width: 15em;
+    height: 10em;
+    padding: 10px;
+    background: linear-gradient(270deg, #ce68d9, #45c6db, #45db79);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    transition: .4s all ease-in-out;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 15px beige;  
+}
+.card:hover{
+    width: 16em;
+    height: 11em;
+}
+@keyframes H1-Animation {
+    0%{
+       color:palegreen;
+    }
+    50%{
+      color:cornflowerblue
+    }
+    100%{
+       color:blanchedalmond;
+    }
+}
+@keyframes AnimationName {
+    0% {
+      background-position: 0% 50%
+    }
+  
+    50% {
+      background-position: 100% 50%
+    }
+  
+    100% {
+      background-position: 0% 50%
+    }
+  }
+ 
