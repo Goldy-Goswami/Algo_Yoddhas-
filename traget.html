@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Target Setter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<button class="toggle-dark" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+<div class="container" id="formContainer">
+  <button class="close-btn" onclick="toggleView()">×</button>
+  <h1>🎯 Set Your Targets</h1>
+  <input type="text" id="targetTitle" placeholder="Target Title" />
+  <textarea id="targetDescription" placeholder="Target Description"></textarea>
+  <input type="date" id="targetDeadline" />
+  <input type="time" id="targetTime" />
+  <button onclick="addTarget()">Add Target</button>
+  <div id="targetList"></div>
+</div>
+
+<div class="container" id="displayOnlyContainer">
+  <h2>Your Targets</h2>
+  <div id="displayList"></div>
+  <button onclick="toggleView(true)">➕ Add Target</button>
+</div>
+
+<audio id="notifySound" src="https://notificationsounds.com/storage/sounds/file-sounds-1150-pristine.mp3" preload="auto"></audio>
+
+<script src="/script.js"> </script>
+</body>
+</html>

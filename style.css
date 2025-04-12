@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  :root {
+    --bg: #f4f4f4;
+    --text: #222;
+    --card: #fff;
+    --border: #28a745;
+  }
+
+  .dark-mode {
+    --bg: #121212;
+    --text: #eaeaea;
+    --card: #1e1e1e;
+    --border: #0f0;
+  }
+
+  .container {
+    background-color: var(--card);
+    padding: 20px 30px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 40px auto;
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .close-btn:hover {
+    background-color: #c82333;
+  }
+
+  h1, h2 {
+    text-align: center;
+    color: var(--text);
+  }
+
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  .target {
+    background: #f9f9f9;
+    color: #222;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 5px solid #28a745;
+    position: relative;
+  }
+
+  .overdue {
+    border-left-color: #dc3545 !important;
+    background: #ffe6e6;
+  }
+
+  .timestamp, .deadline {
+    font-size: 0.85em;
+    color: #555;
+  }
+
+  .actions {
+    margin-top: 5px;
+  }
+
+  .actions button {
+    width: auto;
+    margin-right: 5px;
+    background-color: #007bff;
+  }
+
+  .actions button:hover {
+    background-color: #0069d9;
+  }
+
+  .actions .delete {
+    background-color: #dc3545;
+  }
+
+  .actions .delete:hover {
+    background-color: #c82333;
+  }
+
+  .edit-input {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #displayOnlyContainer {
+    display: none;
+    text-align: center;
+  }
+
+  #displayOnlyContainer button {
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .toggle-dark {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #343a40;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .toggle-dark:hover {
+    background: #23272b;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      margin: 20px 10px;
+      padding: 15px;
+    }
+  }
