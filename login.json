@@ -1,0 +1,24 @@
+{
+    "form": {
+      "id": "Login-Form-Hackathon",
+      "fields": [
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email",
+          "placeholder": "Email"
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": "Password",
+          "placeholder": "Password"
+        }
+      ],
+      "submit": {
+        "label": "Login",
+        "action": "firebase.auth().signInWithEmailAndPassword"
+      }
+    }
+  }
+  
